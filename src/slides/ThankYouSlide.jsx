@@ -35,7 +35,7 @@ export default function ThankYouSlide({ index }) {
         </div>
       </div>
 
-      <BottomBar text={<Editable as="span" id="thankYou.footer">The Future of Software Delivery Is Agentic — and Automated</Editable>} />
+      <BottomBar text={<Editable as="span" id="thankYou.footer">ANWB Developer Day</Editable>} />
     </Slide>
   )
 }

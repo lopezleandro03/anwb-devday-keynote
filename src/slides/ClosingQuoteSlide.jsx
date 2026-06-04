@@ -53,7 +53,7 @@ export default function ClosingQuoteSlide({ index, project }) {
         </blockquote>
       </div>
 
-      <BottomBar text={<Editable as="span" id="slide.footer">exit 0 — ANWB Developer Day</Editable>} />
+      <BottomBar text={<Editable as="span" id="slide.footer">ANWB Developer Day</Editable>} />
     </Slide>
   )
 }

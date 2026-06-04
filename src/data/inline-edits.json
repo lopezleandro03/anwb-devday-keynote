@@ -21,5 +21,6 @@
     "style": {
       "color": "var(--accent)"
     }
-  }
+  },
+  "slide.footer": "ANWB DEVELOPER DAY"
 }

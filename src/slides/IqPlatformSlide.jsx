@@ -11,7 +11,7 @@ export default function IqPlatformSlide({ index, project }) {
       <div className={`${styles.body} content-frame content-gutter`}>
         <img src={iqImage} alt="IQ Platform — Web IQ, Work IQ, Fabric IQ, Foundry IQ powering Agents" className={styles.heroImage} />
       </div>
-      <BottomBar text={<Editable as="span" id="slide.footer">IQ Platform Overview</Editable>} />
+      <BottomBar text={<Editable as="span" id="slide.footer">ANWB Developer Day</Editable>} />
     </Slide>
   )
 }

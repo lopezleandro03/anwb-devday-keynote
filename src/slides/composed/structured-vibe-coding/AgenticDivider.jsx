@@ -47,7 +47,7 @@ export default function AgenticDivider({ index, project }) {
         </p>
       </div>
 
-      <BottomBar text={<Editable as="span" id="slide.footer">npm install --save-dev @future/agentic-skills</Editable>} />
+      <BottomBar text={<Editable as="span" id="slide.footer">ANWB Developer Day</Editable>} />
     </Slide>
   )
 }
