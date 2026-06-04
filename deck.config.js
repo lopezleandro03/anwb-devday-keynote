@@ -6,6 +6,7 @@ import structuredvibecodingSdlcInfographic from './src/slides/composed/structure
 import structuredvibecodingAgentsMdSlide from './src/slides/composed/structured-vibe-coding/AgentsMdSlide.jsx'
 import structuredvibecodingCustomInstructions from './src/slides/composed/structured-vibe-coding/CustomInstructions.jsx'
 import structuredvibecodingSkillsAndPlans from './src/slides/composed/structured-vibe-coding/SkillsAndPlans.jsx'
+import structuredvibecodingUseCaseVideo from './src/slides/composed/structured-vibe-coding/UseCaseVideo.jsx'
 import nordclouddevdayAgenticEvolutionSlide from './src/slides/composed/nordcloud-devday/AgenticEvolutionSlide.jsx'
 import nordclouddevdayVibeCodingSlide from './src/slides/composed/nordcloud-devday/VibeCodingSlide.jsx'
 import nordclouddevdayAbstractionLadderSlide from './src/slides/composed/nordcloud-devday/AbstractionLadderSlide.jsx'
@@ -43,10 +44,11 @@ export default {
     nordclouddevdayAbstractionLadderDiagramSlide,
     structuredvibecodingVibeCodingLimits,
     structuredvibecodingAgenticDivider,
+    structuredvibecodingSdlcInfographic,
+    structuredvibecodingUseCaseVideo,
     structuredvibecodingAgentsMdSlide,
     structuredvibecodingCustomInstructions,
     structuredvibecodingSkillsAndPlans,
-    structuredvibecodingSdlcInfographic,
     DevToolsEvolutionSlide,
     DemoAnnouncementSlide,
     CopilotCliScreenSlide,
