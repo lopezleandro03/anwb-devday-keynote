@@ -39,15 +39,15 @@ export default function AgenticDivider({ index, project }) {
         </h1>
 
         <p className={styles.subtitle}>
-          <Editable as="span" id="slide.subtitle">{"Code is the byproduct. Thinking is the skill."}</Editable>
+          <Editable as="span" id="slide.subtitle">{"git checkout -b agentic-engineering 🚀"}</Editable>
         </p>
 
         <p className={styles.hook}>
-          <Editable as="span" id="slide.hook">{"Your developers don't need to code faster — they need to engineer differently."}</Editable>
+          <Editable as="span" id="slide.hook">{"Stop writing code. Start engineering the agents that write it for you."}</Editable>
         </p>
       </div>
 
-      <BottomBar text={<Editable as="span" id="slide.footer">ANWB Developer Day</Editable>} />
+      <BottomBar text={<Editable as="span" id="slide.footer">npm install --save-dev @future/agentic-skills</Editable>} />
     </Slide>
   )
 }

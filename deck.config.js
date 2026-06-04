@@ -25,6 +25,7 @@ import DemoAnnouncementSlide from './src/slides/DemoAnnouncementSlide.jsx'
 import CopilotCliScreenSlide from './src/slides/CopilotCliScreenSlide.jsx'
 import DemoAdeSlide from './src/slides/DemoAdeSlide.jsx'
 import UnlockIntelligenceSlide from './src/slides/UnlockIntelligenceSlide.jsx'
+import ClosingQuoteSlide from './src/slides/ClosingQuoteSlide.jsx'
 import ThankYouSlide from './src/slides/ThankYouSlide.jsx'
 
 export default {
@@ -52,12 +53,13 @@ export default {
     DemoAdeSlide,
     UnlockIntelligenceSlide,
     IqPlatformSlide,
+    ClosingQuoteSlide,
+    ThankYouSlide,
+    AppendixDividerSlide,
     AIParadoxDividerSlide,
     AutomationImperativeSlide,
     PlatformSolutionSlide,
     BreakoutSessionsSlide,
-    ThankYouSlide,
-    AppendixDividerSlide,
     AIParadoxSlide,
     nordclouddevdayOneESPlatformSlide,
     TwoFuturesSlide,
