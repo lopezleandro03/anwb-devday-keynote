@@ -3,6 +3,9 @@ import structuredvibecodingKarpathyOrigin from './src/slides/composed/structured
 import structuredvibecodingVibeCodingLimits from './src/slides/composed/structured-vibe-coding/VibeCodingLimits.jsx'
 import structuredvibecodingAgenticDivider from './src/slides/composed/structured-vibe-coding/AgenticDivider.jsx'
 import structuredvibecodingSdlcInfographic from './src/slides/composed/structured-vibe-coding/SdlcInfographic.jsx'
+import structuredvibecodingAgentsMdSlide from './src/slides/composed/structured-vibe-coding/AgentsMdSlide.jsx'
+import structuredvibecodingCustomInstructions from './src/slides/composed/structured-vibe-coding/CustomInstructions.jsx'
+import structuredvibecodingSkillsAndPlans from './src/slides/composed/structured-vibe-coding/SkillsAndPlans.jsx'
 import nordclouddevdayAgenticEvolutionSlide from './src/slides/composed/nordcloud-devday/AgenticEvolutionSlide.jsx'
 import nordclouddevdayVibeCodingSlide from './src/slides/composed/nordcloud-devday/VibeCodingSlide.jsx'
 import nordclouddevdayAbstractionLadderSlide from './src/slides/composed/nordcloud-devday/AbstractionLadderSlide.jsx'
@@ -40,6 +43,9 @@ export default {
     structuredvibecodingVibeCodingLimits,
     structuredvibecodingAgenticDivider,
     structuredvibecodingSdlcInfographic,
+    structuredvibecodingAgentsMdSlide,
+    structuredvibecodingCustomInstructions,
+    structuredvibecodingSkillsAndPlans,
     DevToolsEvolutionSlide,
     DemoAnnouncementSlide,
     CopilotCliScreenSlide,
