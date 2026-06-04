@@ -25,3 +25,4 @@ Thumbs.db
 .github/eyes/
 .gh-pages-tmp
 *.local
+.deckio-sync-state.json
