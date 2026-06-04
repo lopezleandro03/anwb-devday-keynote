@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { BottomBar, Editable, Slide } from '@deckio/deck-engine'
+import React, { useState, useEffect, useCallback } from 'react'
+import { BottomBar, Editable, Slide, useSlides } from '@deckio/deck-engine'
 import styles from './DevToolsEvolutionSlide.module.css'
 
 const eras = [
@@ -32,22 +32,53 @@ const eras = [
   },
 ]
 
+// Total substeps: 1 (first card) → 2 → 3 → 4 (punchline) → done (let navigation advance)
+const TOTAL_STEPS = eras.length + 1 // 3 cards + punchline
+
+const FORWARD_KEYS = new Set(['ArrowRight', ' ', 'PageDown', 'Enter'])
+const BACKWARD_KEYS = new Set(['ArrowLeft', 'PageUp'])
+
 export default function DevToolsEvolutionSlide({ index, project }) {
+  const { current } = useSlides()
+  const isActive = current === index
   const [visible, setVisible] = useState(1)
 
-  const advance = (e) => {
-    e.stopPropagation()
-    if (visible <= eras.length) {
-      setVisible((v) => v + 1)
-    } else {
-      setVisible(1)
+  // Reset when navigating away and back
+  useEffect(() => {
+    if (!isActive) setVisible(1)
+  }, [isActive])
+
+  // Intercept keyboard events in capture phase (before SlideContext handler)
+  useEffect(() => {
+    if (!isActive) return
+
+    const handler = (e) => {
+      if (FORWARD_KEYS.has(e.key)) {
+        if (visible < TOTAL_STEPS) {
+          // Still have substeps to reveal — consume the event
+          e.preventDefault()
+          e.stopPropagation()
+          setVisible((v) => v + 1)
+        }
+        // else: all revealed, let event bubble to SlideContext for slide advance
+      } else if (BACKWARD_KEYS.has(e.key)) {
+        if (visible > 1) {
+          // Step backward through substeps
+          e.preventDefault()
+          e.stopPropagation()
+          setVisible((v) => v - 1)
+        }
+        // else: at initial state, let event bubble for slide back
+      }
     }
-  }
+
+    // Capture phase ensures we run before SlideContext's document-level handler
+    window.addEventListener('keydown', handler, true)
+    return () => window.removeEventListener('keydown', handler, true)
+  }, [isActive, visible])
 
   return (
     <Slide index={index} className={styles.devToolsEvolution}>
-      {/* click target covering the whole slide */}
-      <div className={styles.clickTarget} onClick={advance} />
       <div className="accent-bar" />
       <div className={`orb ${styles.orb1}`} />
       <div className={`orb ${styles.orb2}`} />
