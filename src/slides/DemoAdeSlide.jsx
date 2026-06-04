@@ -17,7 +17,7 @@ export default function DemoAdeSlide({ index, project }) {
         </div>
 
         <Editable as="h1" id="slide.title" className={styles.title}>
-          The Agent Development Environment
+          Agentic Development Environment
         </Editable>
 
         <Editable as="p" id="slide.subtitle" className={styles.subtitle}>
