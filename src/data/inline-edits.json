@@ -16,5 +16,10 @@
   "breakouts.sessions.agentic.name": "Rick Smit",
   "slide.eras.ade.name": "AGENTIC DEVELOPMENT ENVIRONMENT",
   "cover.titleBefore": "The Future of Software Engineering Is Agentic",
-  "cover.titleHighlight": "and we must embrace it."
+  "cover.titleHighlight": "and we must embrace it.",
+  "slide.titleLine2": {
+    "style": {
+      "color": "var(--accent)"
+    }
+  }
 }
