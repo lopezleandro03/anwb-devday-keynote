@@ -5,6 +5,7 @@
  */
 import { BottomBar, Editable, Slide } from '@deckio/deck-engine'
 import styles from './CoverSlide.module.css'
+import anwbLogo from '../data/logos/anwb-logo.png'
 
 export default function CoverSlide() {
   return (
@@ -13,6 +14,8 @@ export default function CoverSlide() {
       <div className={`orb ${styles.orb1}`} />
       <div className={`orb ${styles.orb2}`} />
       <div className={`orb ${styles.orb3}`} />
+
+      <img src={anwbLogo} alt="ANWB" className={styles.anwbLogo} />
 
       <div className="content-frame content-gutter">
         <div className={styles.content}>

@@ -63,6 +63,16 @@
   opacity: 0.72;
 }
 
+.anwbLogo {
+  position: absolute;
+  top: 32px;
+  right: 48px;
+  height: 112px;
+  width: auto;
+  object-fit: contain;
+  z-index: 20;
+}
+
 .eyebrow {
   font-size: 13px;
   font-weight: 700;
