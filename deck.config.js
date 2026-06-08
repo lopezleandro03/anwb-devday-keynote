@@ -21,7 +21,6 @@ import ClosingQuoteSlide from './src/slides/ClosingQuoteSlide.jsx'
 import ThankYouSlide from './src/slides/ThankYouSlide.jsx'
 
 export default {
-  private: true,
   id: 'anwb-devday',
   title: 'ANWB DevDay',
   subtitle: 'ANWB DevDay',
