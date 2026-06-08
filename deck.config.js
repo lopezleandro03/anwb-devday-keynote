@@ -1,5 +1,4 @@
 import CoverSlide from './src/slides/CoverSlide.jsx'
-import structuredvibecodingKarpathyOrigin from './src/slides/composed/structured-vibe-coding/KarpathyOrigin.jsx'
 import structuredvibecodingVibeCodingLimits from './src/slides/composed/structured-vibe-coding/VibeCodingLimits.jsx'
 import structuredvibecodingAgenticDivider from './src/slides/composed/structured-vibe-coding/AgenticDivider.jsx'
 import structuredvibecodingSdlcInfographic from './src/slides/composed/structured-vibe-coding/SdlcInfographic.jsx'
@@ -11,15 +10,7 @@ import nordclouddevdayAgenticEvolutionSlide from './src/slides/composed/nordclou
 import nordclouddevdayVibeCodingSlide from './src/slides/composed/nordcloud-devday/VibeCodingSlide.jsx'
 import nordclouddevdayAbstractionLadderSlide from './src/slides/composed/nordcloud-devday/AbstractionLadderSlide.jsx'
 import nordclouddevdayAbstractionLadderDiagramSlide from './src/slides/composed/nordcloud-devday/AbstractionLadderDiagramSlide.jsx'
-import nordclouddevdayPriyankaInfographicSlide from './src/slides/composed/nordcloud-devday/PriyankaInfographicSlide.jsx'
-import nordclouddevdayOneESPlatformSlide from './src/slides/composed/nordcloud-devday/OneESPlatformSlide.jsx'
-import AIParadoxDividerSlide from './src/slides/AIParadoxDividerSlide.jsx'
-import AutomationImperativeSlide from './src/slides/AutomationImperativeSlide.jsx'
-import AIParadoxSlide from './src/slides/AIParadoxSlide.jsx'
-import PlatformSolutionSlide from './src/slides/PlatformSolutionSlide.jsx'
-import BreakoutSessionsSlide from './src/slides/BreakoutSessionsSlide.jsx'
-import TwoFuturesSlide from './src/slides/TwoFuturesSlide.jsx'
-import AppendixDividerSlide from './src/slides/AppendixDividerSlide.jsx'
+
 import IqPlatformSlide from './src/slides/IqPlatformSlide.jsx'
 import DevToolsEvolutionSlide from './src/slides/DevToolsEvolutionSlide.jsx'
 import DemoAnnouncementSlide from './src/slides/DemoAnnouncementSlide.jsx'
@@ -57,13 +48,6 @@ export default {
     DemoAdeSlide,
     ClosingQuoteSlide,
     ThankYouSlide,
-    AppendixDividerSlide,
-    AIParadoxDividerSlide,
-    AutomationImperativeSlide,
-    PlatformSolutionSlide,
-    BreakoutSessionsSlide,
-    AIParadoxSlide,
-    nordclouddevdayOneESPlatformSlide,
-    TwoFuturesSlide,
+
   ],
 }
